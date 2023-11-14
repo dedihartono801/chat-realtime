@@ -8,6 +8,7 @@ Tech Stack:
 - Postgres
 - Supabase
 - Kafka
+- docker
 
 ## Install Migration
 
