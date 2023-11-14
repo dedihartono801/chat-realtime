@@ -30,3 +30,6 @@ migration-down:
 migration $$(enter):
 	@read -p "Migration name:" migration_name; \
 	migrate create -ext sql -dir migrations $$migration_name
+
+test-cov:
+	go test -coverprofile=cover.out ./... && go tool cover -html=cover.out -o cover.html
